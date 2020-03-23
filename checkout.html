@@ -8,6 +8,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
+    <link rel="stylesheet" href="frontend/libraries/gijgo/css/gijgo.min.css">
     <!-- Font -->
     <link
         href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800|Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
@@ -19,47 +20,18 @@
     <!-- Navbar -->
     <div class="container sticky-top">
         <nav class="row navbar navbar-expand-lg navbar-light bg-white">
-            <a href="#" class="navbar-brand">
-                <img src="frontend/images/logo.png" alt="Logo Nomads">
-            </a>
-            <button type="button" data-toggle="collapse" data-target="#navb"
-                class="navbar-toggler navbar-toggler-right">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navb">
-                <ul class="navbar-nav ml-auto mr-3">
-                    <li class="nav-item mx-md-2">
-                        <a href="#" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item mx-md-2">
-                        <a href="#" class="nav-link">Travel</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Services</a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Link</a>
-                            <a href="#" class="dropdown-item">Link2</a>
-                            <a href="#" class="dropdown-item">Link3</a>
-                        </div>
-                    </li>
-                    <li class="nav-item mx-md-2">
-                        <a href="#" class="nav-link">Testimonial</a>
-                    </li>
-                </ul>
-                <!-- Mobile Button -->
-                <form class="form-inline d-sm-block d-md-none">
-                    <button class="btn btn-login my-2 my-sm-0 px-4">
-                        Masuk
-                    </button>
-                </form>
-                <!-- Dekstop Button -->
-                <form class="form-inline my-2 my-lg-0 d-md-block d-sm-none">
-                    <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
-                        Masuk
-                    </button>
-                </form>
+            <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+                <a href="index.html" class="navbar-brand">
+                    <img src="frontend/images/logo.png" alt="">
+                </a>
             </div>
+            <ul class="navbar-nav mr-auto d-none d-lg-block">
+                <li>
+                    <span class="text-muted">
+                        | &nbsp; Explore beyond the world
+                    </span>
+                </li>
+            </ul>
         </nav>
     </div>
 
@@ -79,8 +51,11 @@
                                 <li class="breadcrumb-item">
                                     <a href="#">Paket Travel</a>
                                 </li>
-                                <li class="breadcrumb-item active">
+                                <li class="breadcrumb-item">
                                     Detail
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    Checkout
                                 </li>
                             </ol>
                         </nav>
@@ -91,75 +66,96 @@
                 <div class="row">
                     <div class="col-8 pl-lg-0">
                         <div class="card card-details">
-                            <h1>Nusa Peninda</h1>
-                            <p>Republik of Indonesia Raya</p>
-                            <!-- Galery -->
-                            <div class="gallery">
-                                <div class="xzoom-container">
-                                    <img src="frontend/images/details-1.jpg" alt="" class="xzoom" id="xzoom-default"
-                                        xoriginal="frontend/images/details-1.jpg">
-                                </div>
-                                <div class="xzoom-thumbs">
-                                    <a href="frontend/images/details-1.jpg">
-                                        <img src="frontend/images/details-1.jpg" alt="" class="xzoom-gallery"
-                                            width="120px" xpreview="frontend/images/details-1.jpg">
-                                    </a>
-                                    <a href="frontend/images/details-1.jpg">
-                                        <img src="frontend/images/details-1.jpg" alt="" class="xzoom-gallery"
-                                            width="120px" xpreview="frontend/images/details-1.jpg">
-                                    </a>
-                                    <a href="frontend/images/details-1.jpg">
-                                        <img src="frontend/images/details-1.jpg" alt="" class="xzoom-gallery"
-                                            width="120px" xpreview="frontend/images/details-1.jpg">
-                                    </a>
-                                    <a href="frontend/images/details-1.jpg">
-                                        <img src="frontend/images/details-1.jpg" alt="" class="xzoom-gallery"
-                                            width="120px" xpreview="frontend/images/details-1.jpg">
-                                    </a>
-                                    <a href="frontend/images/details-1.jpg">
-                                        <img src="frontend/images/details-1.jpg" alt="" class="xzoom-gallery"
-                                            width="120px" xpreview="frontend/images/details-1.jpg">
-                                    </a>
-                                </div>
+                            <h1>Who is going?</h1>
+                            <p>Trip to Ubud, Bali</p>
+
+                            <div class="attendee">
+                                <table class="table table-responsive-sm text-center">
+                                    <thead>
+                                        <tr>
+                                            <td>Picture</td>
+                                            <td>Name</td>
+                                            <td>Nationality</td>
+                                            <td>Visa</td>
+                                            <td>Passport</td>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> <img src="frontend/images/pic-1.jpg" height="60px"
+                                                    class="rounded-circle"> </td>
+                                            <td class="align-middle">
+                                                Angga Risky
+                                            </td>
+                                            <td class="align-middle">
+                                                CN
+                                            </td>
+                                            <td class="align-middle">
+                                                N/A
+                                            </td>
+                                            <td class="align-middle">
+                                                .Active
+                                            </td>
+                                            <td class="align-middle">
+                                                <a href="#">
+                                                    <img src="frontend/images/Group 4.jpg" alt="">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> <img src="frontend/images/pic-2.jpg" height="60px"
+                                                    class="rounded-circle"> </td>
+                                            <td class="align-middle">
+                                                Galih Pratama
+                                            </td>
+                                            <td class="align-middle">
+                                                SG
+                                            </td>
+                                            <td class="align-middle">
+                                                30 Days
+                                            </td>
+                                            <td class="align-middle">
+                                                .Active
+                                            </td>
+                                            <td class="align-middle">
+                                                <a href="#">
+                                                    <img src="frontend/images/Group 4.jpg" alt="">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <!-- Akhir Galery -->
-                            <h2>Tentang wisata</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam aperiam, aliquam
-                                repudiandae laborum omnis ipsa voluptas dolor libero qui eum quam perspiciatis sunt
-                                pariatur saepe reprehenderit dolore quod fuga!
-                                Laborum corporis delectus eum ipsum at nisi deserunt dolore sint, mollitia aspernatur
-                                explicabo iure illo consectetur voluptatum dolorem expedita autem quasi, fugit,
-                                praesentium repellendus animi saepe voluptatibus eius. Obcaecati, enim?
-                                Optio et fuga, id sapiente dolore consequatur, fugiat ad beatae, illum labore odit animi
-                                natus? Nulla illo cupiditate libero ab dolorem corporis sapiente rem! Labore dolorem
-                                aliquid at distinctio. Sed.</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim nobis, nesciunt dolor quis
-                                nisi pariatur temporibus dicta? Officia iusto impedit esse ex pariatur veritatis aliquid
-                                maxime, odit, ad labore eos!</p>
-                            <div class="features">
-                                <div class="row">
-                                    <div class="col-md-4 ">
-                                        <img src="frontend/images/ic_event.png" class="features-image" alt="">
-                                        <div class="description">
-                                            <h3>Featured Event</h3>
-                                            <p>Tari kecak</p>
-                                        </div>
+                            <div class="member mt-3">
+                                <h2>Member</h2>
+                                <form action="#" class="form-inline">
+                                    <label for="inputUsername" class="sr-only">Name</label>
+                                    <input type="text" class="form-control mb-2 mr-sm-2" id="inputUsername"
+                                        placeholder="Username">
+                                    <label for="inputVisa" class="sr-only">Visa</label>
+                                    <select name="inputVisa" id="inputVisa" class="custom-select mb-2 mr-sm-2">
+                                        <option value="visa">Visa</option>
+                                        <option value="30 Days">30 Days</option>
+                                        <option value="N/A">N/A</option>
+                                    </select>
+
+                                    <label for="doePassport" class="sr-only">DOE Passport</label>
+                                    <div class="input-group mb-2 mr-sm-2">
+                                        <input type="text" class="form-control datepicker" id="doePassport"
+                                            placeholder="DOE Passport">
                                     </div>
-                                    <div class="col-md-4 border-left">
-                                        <img src="frontend/images/ic_event.png" class="features-image" alt="">
-                                        <div class="description">
-                                            <h3>Bahasa</h3>
-                                            <p>Bahasa Indonesia</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 border-left">
-                                        <img src="frontend/images/ic_event.png" class="features-image" alt="">
-                                        <div class="description">
-                                            <h3>Food</h3>
-                                            <p>Local food</p>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                    <button type="submit" class="btn btn-add-now mb-2 px-4">
+                                        Add Now
+                                    </button>
+
+                                </form>
+
+                                <h3 class="mt-2 mb-0">Note</h3>
+                                <p class="disclaimer mb-0">
+                                    You are only able to invite member that has registered in Nomads.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -200,8 +196,8 @@
                                 </div>
                             </div>
                             <hr>
-                            <h2>Trip Information</h2>
                             <div class="trip-information">
+                                <h2>Trip Information</h2>
                                 <div class="row">
                                     <div class="col d-flex justify-content-start ml-1 text-main">
                                         <p>Date of Departure</p>
@@ -313,6 +309,7 @@
 <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
 <script src="frontend/libraries/retina/retina.min.js"></script>
 <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+<script src="frontend/libraries/gijgo/js/gijgo.min.js"></script>
 <script>
     $('document').ready(function () {
         $('.xzoom, .xzoom-gallery').xzoom({
@@ -320,6 +317,13 @@
             title: false,
             tint: '#333',
             Xoffset: 15,
+        });
+
+        $('.datepicker').datepicker({
+            uiLibrary: 'bootstrap4',
+            icons: {
+                rightIcon: '<img src="frontend/images/ic_doe.jpg"/>'
+            }
         });
     });
 </script>

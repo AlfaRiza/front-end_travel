@@ -302,6 +302,63 @@ header {
             font-size: 18px;
             color: #B1B1B1;
         }
+
+        .trip-information {
+
+            .text-main {
+                font-weight: 300 !important;
+                font-size: 18px;
+                color: #071C4D;
+            }
+
+            .text-detail{
+                font-weight: 300 !important;
+                font-size: 18px;
+                color: #071C4D;
+            }
+        }
+
+        h3{
+            font-weight: 600;
+            font-size: 14px;
+            color: #071C4D;
+        }
+
+        .disclaimer{
+            font-weight: 300;
+            font-size: 14px;
+            color: #b1b1b1;
+        }
+
+        .gj-datepicker{
+            .datepicker{
+                border-right: 0;
+
+            }
+
+            .inputi-group-append{
+                .btn{
+                    padding-right: 30px;
+
+                }
+            }
+        }
+
+        .btn-add-now{
+            background-color: #071C4D;
+            color: #ffffff;
+
+            &:hover{
+                background-color: rgb(35, 89, 214);
+                color: #fff;
+            }
+        }
+
+    }
+
+    .card-right {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     .features {
@@ -344,6 +401,32 @@ header {
                 border: 4px solid #1ABC9C;
                 box-shadow: none;
             }
+        }
+    }
+
+    .members {
+        .member-image {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .join-container {
+        position: relative;
+        z-index: 1;
+        margin-top: -16px;
+
+    }
+
+    .btn-join-now {
+        background-color: #FF9E53;
+        color: #fff;
+        border-radius: 0;
+
+        &:hover {
+            background-color: rgb(255, 179, 121);
+            color: #fff;
+            border-radius: 0;
         }
     }
 }
