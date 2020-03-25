@@ -303,6 +303,12 @@ header {
             color: #B1B1B1;
         }
 
+        h3 {
+            font-weight: 600;
+            font-size: 14px;
+            color: #071C4D;
+        }
+
         .trip-information {
 
             .text-main {
@@ -311,49 +317,102 @@ header {
                 color: #071C4D;
             }
 
-            .text-detail{
+            .text-detail {
                 font-weight: 300 !important;
                 font-size: 18px;
                 color: #071C4D;
             }
+
+            .text-blue {
+                color: #071C4D;
+                font-weight: bold;
+            }
+
+            .text-orange {
+                color: #FF9E53;
+                font-weight: bold;
+            }
         }
 
-        h3{
-            font-weight: 600;
-            font-size: 14px;
-            color: #071C4D;
-        }
-
-        .disclaimer{
+        .payment-instruction {
             font-weight: 300;
             font-size: 14px;
             color: #b1b1b1;
         }
 
-        .gj-datepicker{
-            .datepicker{
+        .bank {
+            .bank-item {
+                h3 {
+                    font-weight: normal;
+                    font-size: 18px;
+                    color: #071C4D;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                .description {
+                    margin-left: 10px;
+                    overflow: hidden;
+
+                    p {
+                        font-weight: normal;
+                        font-size: 16px;
+                        color: #071C4D;
+                        // text-align: left;
+                    }
+                }
+            }
+
+            .bank-image {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        .disclaimer {
+            font-weight: 300;
+            font-size: 14px;
+            color: #b1b1b1;
+        }
+
+        .gj-datepicker {
+            .datepicker {
                 border-right: 0;
 
             }
 
-            .inputi-group-append{
-                .btn{
+            .inputi-group-append {
+                .btn {
                     padding-right: 30px;
 
                 }
             }
         }
 
-        .btn-add-now{
+        .btn-add-now {
             background-color: #071C4D;
             color: #ffffff;
 
-            &:hover{
+            &:hover {
                 background-color: rgb(35, 89, 214);
                 color: #fff;
             }
         }
 
+
+    }
+
+    .btn-cancle {
+        color: #b1b1b1;
+        font-weight: normal;
+
+        &:hover {
+            color: #444444;
+            text-decoration: none;
+        }
     }
 
     .card-right {
