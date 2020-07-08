@@ -559,3 +559,20 @@ header {
     }
 }
 
+.btn-register{
+    background-color: #FF9E53;
+    color: #ffffff;
+
+    &:hover {
+        background-color: rgb(255, 184, 130);
+        color: #ffffff;
+    }
+}
+.p-register{
+    font-family: Assistant;
+    font-weight: 300;
+    text-decoration: underline;
+    font-size: 16px;
+    text-align: center;
+    color: #bfbfbf;
+}

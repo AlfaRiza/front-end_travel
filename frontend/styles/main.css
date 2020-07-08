@@ -511,4 +511,23 @@ header .btn-get-started:hover {
   text-align: center;
   color: #bfbfbf;
 }
+
+.btn-register {
+  background-color: #FF9E53;
+  color: #ffffff;
+}
+
+.btn-register:hover {
+  background-color: #ffb882;
+  color: #ffffff;
+}
+
+.p-register {
+  font-family: Assistant;
+  font-weight: 300;
+  text-decoration: underline;
+  font-size: 16px;
+  text-align: center;
+  color: #bfbfbf;
+}
 /*# sourceMappingURL=main.css.map */
