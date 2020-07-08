@@ -530,4 +530,12 @@ header .btn-get-started:hover {
   text-align: center;
   color: #bfbfbf;
 }
+
+.title-register {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 50px;
+  text-align: left;
+  color: #051334;
+}
 /*# sourceMappingURL=main.css.map */
